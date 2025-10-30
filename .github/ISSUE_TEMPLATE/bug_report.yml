@@ -1,8 +1,28 @@
+name: 🐞 Bug report
+description: Report a bug or issue found in published game content
+labels: [bug]
 body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe what went wrong and what you expected.
+      placeholder: e.g. Quest giver not responding, NPC missing dialogue line...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: 1. Talk to NPC ... 2. Accept quest ... 3. See error
+    validations:
+      required: false
+
   - type: markdown
     attributes:
       value: |
         ---
         **Content Licensing:**  
         All submissions are covered by the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 License.  
-        See [LICENSE](../LICENSE) for full terms.
+        See [LICENSE](../../LICENSE) for full terms.
