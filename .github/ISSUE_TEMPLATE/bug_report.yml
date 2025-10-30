@@ -1,0 +1,8 @@
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        **Content Licensing:**  
+        All submissions are covered by the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 License.  
+        See [LICENSE](../LICENSE) for full terms.
