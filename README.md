@@ -1,39 +1,45 @@
-# 🏰 A Game of Cubes — Public Dev Log & Community Hub
+# 🧱 A Game of Cubes
 
-Welcome to the public development hub for **A Game of Cubes**,  
-a community-driven RPG world inspired by the classic open-world adventures.
+An open-world RPG Minecraft server inspired by early Baldur’s Gate, Ultima, and EVE Online — rebuilt around **Towny**, **Denizen**, and a light, community-driven class system.
 
-This repository hosts:
-- 📜 Public dev-log entries and changelogs  
-- 🧭 Design discussions and feature proposals (via Issues)  
-- ⚙️ Documentation links and community resources  
-
-> ⚠️ The main deployment & server repo (**privatehub**) remains private for security reasons.  
-> All content here is licensed under **CC BY-NC-SA 4.0** — you can share or adapt non-commercially, with credit.
+> ⚓ Adventure • Trade • Build • Conquer
 
 ---
 
-### 🔗 Useful Links
-- 🌍 **Website:** [agameofcubes.com](https://agameofcubes.com)
-- 💬 **Discord:** [Join the community]([https://discord.gg/HryarzzuXX](https://discord.gg/HryarzzuXX))
-- 🎥 **Twitch:** [ProjectGoMad](https://www.twitch.tv/projectgomad)
-- 📘 **Wiki:** [Private Dev Wiki (internal)](https://github.com/diskawrs/privatehub/wiki)
+## 📖 Project Wiki
+All player guides, commands, and update summaries live in the **Wiki**:
+
+👉 **[Visit the Wiki →](https://github.com/diskawrs/AGameOfCubes/wiki)**
 
 ---
 
-### 🧩 Issues & Suggestions
-Use the **Issues** tab to:
-- Report bugs or typos in dev-notes  
-- Suggest features or world concepts  
-- Discuss gameplay ideas  
-
-By submitting content here, you agree to the  
-[CC BY-NC-SA 4.0 License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+## 🌐 Website
+See the latest changelogs and news here:  
+[https://agameofcubes.com/updates.html](https://agameofcubes.com/updates.html)
 
 ---
 
-### 📜 License
-This repository is licensed under  
-[Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+## 💬 Community
+Join the conversation and play with us:
 
-![CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png)
+| Platform | Link |
+|-----------|------|
+| 💬 Discord | [Join our Discord](https://discord.com/channels/701090828063604796) |
+| 🎥 Twitch | [ProjectGoMad](https://www.twitch.tv/projectgomad) |
+| 🐙 GitHub Wiki | [A Game of Cubes Wiki](https://github.com/diskawrs/AGameOfCubes/wiki) |
+
+---
+
+## 📜 License
+This project is shared under **CC BY-NC-SA 4.0**  
+You may remix and share non-commercially, with attribution and the same license.
+
+---
+
+### 💡 About
+Server and tools by **diskawrs**  
+Core development hosted at [PrivateHub (internal)](https://github.com/diskawrs/privatehub)
+
+---
+
+> *“The fun of an RPG wasn’t the graphics — it was the friends you made while chasing dragons.”*
