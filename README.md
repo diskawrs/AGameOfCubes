@@ -15,7 +15,7 @@ This repository hosts:
 
 ### 🔗 Useful Links
 - 🌍 **Website:** [agameofcubes.com](https://agameofcubes.com)
-- 💬 **Discord:** [Join the community](https://discord.com/channels/701090828063604796)
+- 💬 **Discord:** [Join the community]([https://discord.gg/HryarzzuXX](https://discord.gg/HryarzzuXX))
 - 🎥 **Twitch:** [ProjectGoMad](https://www.twitch.tv/projectgomad)
 - 📘 **Wiki:** [Private Dev Wiki (internal)](https://github.com/diskawrs/privatehub/wiki)
 
