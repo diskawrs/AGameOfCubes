@@ -16,6 +16,7 @@ All player guides, commands, and update summaries live in the **Wiki**:
 ## 🌐 Website
 See the latest changelogs and news here:  
 [https://agameofcubes.com/updates.html](https://agameofcubes.com/updates.html)
+[https://github.com/diskawrs/AGameOfCubes/wiki/Changelogl](https://github.com/diskawrs/AGameOfCubes/wiki/Changelog)
 
 ---
 
