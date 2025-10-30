@@ -24,7 +24,7 @@ Join the conversation and play with us:
 
 | Platform | Link |
 |-----------|------|
-| 💬 Discord | [Join our Discord](https://discord.com/channels/701090828063604796) |
+| 💬 Discord | [Join our Discord](https://discord.gg/HryarzzuXX) |
 | 🎥 Twitch | [ProjectGoMad](https://www.twitch.tv/projectgomad) |
 | 🐙 GitHub Wiki | [A Game of Cubes Wiki](https://github.com/diskawrs/AGameOfCubes/wiki) |
 
