@@ -1,0 +1,92 @@
+name: 🧭 Player Support Request
+description: For in-game issues, bugs, or general support on A Game of Cubes.
+title: "[Support] <short summary>"
+labels: [player-help, needs-triage]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### 👋 Thanks for reaching out!
+        This form is for **Minecraft player support or in-game problems** on the A Game of Cubes server.
+        Please fill out each section so we can help you quickly.
+        > *Note: For staff or dev bug reports, use the Dev Issue template instead.*
+
+  - type: input
+    id: username
+    attributes:
+      label: Minecraft Username
+      description: Your in-game name (exact spelling).
+      placeholder: e.g., diskawrs
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: What kind of issue is this?
+      options:
+        - Connection or login issue
+        - Permission or teleport issue
+        - Towny or plot problem
+        - Quest / Denizen / NPC bug
+        - Resource pack or texture issue
+        - Economy / money / rewards
+        - General gameplay question
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe what happened
+      description: Tell us what’s going wrong, and what you expected to happen instead.
+      placeholder: |
+        Example:
+        - I tried to teleport to my town but it says "You don’t have permission."
+        - I followed the quest but it didn’t complete.
+    validations:
+      required: true
+
+  - type: input
+    id: timestamp
+    attributes:
+      label: Approximate date/time of issue
+      description: Helps us check logs.
+      placeholder: "YYYY-MM-DD HH:MM (server time)"
+    validations:
+      required: false
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce (if applicable)
+      description: |
+        If this is a bug or repeatable issue, list the steps we can take to reproduce it.
+      placeholder: |
+        1. Log in to the server
+        2. Type /warp market
+        3. Try to open merchant
+        4. Error appears
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or evidence
+      description: |
+        Drag and drop screenshots or paste image links here.
+      placeholder: "Attach any helpful images or logs."
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        ---
+        ✅ **Before posting:**
+        - Make sure you’re on the latest resource pack.
+        - Check the `#help` channel on Discord — your issue might already have an answer.
+        - Don’t post personal info (emails, passwords, or IPs).
+
+        💬 **After submitting:**
+        Staff will respond on GitHub or follow up via Discord if linked.
