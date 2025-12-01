@@ -1,7 +1,7 @@
 name: Join the Team
-description: Apply to join A Game of Cubes as a Content Creator, Builder, Developer, or Tester.
+description: Apply to join A Game of Cubes (Lore, Builder, Developer, Content Creator, Tester)
 title: "Application: [Role] - YourName"
-labels: ["application"]
+labels: ["application", "needs-review"]
 assignees: ["diskawrs"]
 
 body:
@@ -9,18 +9,17 @@ body:
     attributes:
       value: |
         # ✨ Join the A Game of Cubes Team
-        
-        Thanks for your interest in contributing!  
-        Please fill out the details below — short and clear answers are fine.
+        Please complete the application below.
 
   - type: dropdown
     id: role
     attributes:
       label: Which role are you applying for?
       options:
-        - Content Creator
-        - Builder
+        - Lore & Story
+        - Landscape & Structures
         - Developer
+        - Content Creator (Streams / Videos)
         - Tester
     validations:
       required: true
@@ -29,32 +28,38 @@ body:
     id: experience
     attributes:
       label: Briefly describe your experience
-      placeholder: "Tell us about your background, past work, skills, or examples."
+      placeholder: "Background, examples, past projects, skills, etc."
     validations:
       required: true
+
+  - type: textarea
+    id: devskills
+    attributes:
+      label: Developer Skills (MMOCore, Denizen, MythicMobs)
+      placeholder: "Optional unless applying as Developer."
+    validations:
+      required: false
 
   - type: textarea
     id: links
     attributes:
       label: Links (portfolio, GitHub, screenshots, videos)
-      placeholder: "Share anything relevant that helps us understand your work."
+      placeholder: "Please include at least one relevant link."
     validations:
-      required: false
+      required: true
 
   - type: textarea
     id: motivation
     attributes:
       label: Why do you want to join A Game of Cubes?
-      placeholder: "1–3 sentences are enough."
+      placeholder: "Short answer is fine."
     validations:
       required: true
 
   - type: markdown
     attributes:
       value: |
-        ---  
-        ✔ After submitting, we’ll review your application as time allows.  
-        ✔ All discussions stay on GitHub — no Discord required.  
-        ✔ This is a community-driven, voluntary project.  
-
-        Thank you for your interest!
+        ---
+        ✔ Applications are handled on GitHub only  
+        ✔ Links are required so we can verify your work  
+        ✔ We review applications as time allows  
