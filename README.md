@@ -1,50 +1,57 @@
-# 🧱 A Game of Cubes
+# 🌐 A Game of Cubes — Public Portal
 
-An open-world RPG Minecraft server inspired by early Baldur’s Gate, Ultima, and EVE Online — rebuilt around **Towny**, **Denizen**, and a light, community-driven class system.
+Welcome to the public repository for **A Game of Cubes**, a community-driven RPG project.
 
-> ⚓ Adventure • Trade • Build • Conquer
+This repo exists to provide:
 
----
+- 📚 **Public documentation**  
+- 🐞 **Bug reports**  
+- 💬 **Community discussions**  
+- ✨ **Team applications**  
+- 📝 **Project information**
 
-## 📖 Project Wiki
-All player guides, commands, and update summaries live in the **Wiki**:
-
-👉 **[Visit the Wiki →](https://github.com/diskawrs/AGameOfCubes/wiki)**
-
----
-
-## 🌐 Website
-See the latest news, updates and guides here:  
-
-| Topic | Link |
-|-----------|------|
-| 💬 Main | [Actual website](https://agameofcubes.com) |
-| 🎥 Updates | [All the updates](https://agameofcubes.com/updates.html) |
-| 🐙 Wiki | [Howtos and Guides](https://github.com/diskawrs/AGameOfCubes/wiki) |
+There is **no game code** here — internal systems and server infrastructure live in private repositories.
 
 ---
 
-## 💬 Community
-Join the conversation and play with us:
+## 📌 Can I contribute?
 
-| Platform | Link |
-|-----------|------|
-| 💬 Discord | [Join our Discord](https://discord.gg/HryarzzuXX) |
-| 🎥 Twitch | [ProjectGoMad](https://www.twitch.tv/projectgomad) |
-| 🐙 GitHub Wiki | [A Game of Cubes Wiki](https://github.com/diskawrs/AGameOfCubes/wiki) |
+This repository is **read-only**.  
+You are welcome to:
 
----
+- Open **issues** (bugs, feedback, suggestions)  
+- Participate in **discussions**  
+- Apply to **join the team**  
+- Read the **public wiki**  
 
-## 📜 License
-This project is shared under **CC BY-NC-SA 4.0**  
-You may remix and share non-commercially, with attribution and the same license.
+Pull requests are not accepted.
 
 ---
 
-### 💡 About
-Server and tools by **diskawrs**  
-Core development hosted at [PrivateHub (internal)](https://github.com/diskawrs/privatehub)
+## 🚀 Join the Team
+
+If you'd like to help build the world of A Game of Cubes,  
+you can apply here:
+
+👉 https://github.com/diskawrs/AGameOfCubes/issues/new?template=join-the-team.yml
 
 ---
 
-> *“The fun of an RPG wasn’t the graphics — it was the friends you made while chasing dragons.”*
+## 📖 Public Wiki
+
+Visit the wiki here:
+
+👉 https://github.com/diskawrs/AGameOfCubes/wiki
+
+---
+
+## 🔒 Security
+
+This repository is public for transparency,  
+but all modifications are protected by strict branch rules and CODEOWNERS.
+
+See **SECURITY.md** for details.
+
+---
+
+Thanks for being part of our journey ✨

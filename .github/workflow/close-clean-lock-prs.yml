@@ -1,0 +1,45 @@
+name: Auto-Tag, Close, Clean, and Lock PRs
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  tag_close_clean_lock:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+      issues: write
+      contents: write
+
+    steps:
+      - name: Add 'invalid' label to PR
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          labels: |
+            invalid
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Close PR
+        uses: peter-evans/close-pull-request@v3
+        with:
+          comment: |
+            ⚠️ This repository does not accept pull requests.
+            This PR has been automatically tagged as **invalid** and closed.
+            Please use **Issues** instead:
+            https://github.com/diskawrs/AGameOfCubes/issues
+
+      - name: Delete branch (only if internal)
+        if: github.event.pull_request.head.repo.full_name == github.repository
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git push origin --delete "${{ github.event.pull_request.head.ref }}"
+
+      - name: Lock PR conversation
+        uses: dessant/lock-threads@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          issue-type: pull-request
+          pr-lock-reason: "resolved"

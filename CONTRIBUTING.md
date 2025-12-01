@@ -1,14 +1,23 @@
-# Contribution Guidelines
+# ❗ Contributing to This Repository
 
-We welcome community input!  
-To keep things safe, readable, and creative:
+This repository is public for documentation, issues, and discussions,  
+but it does **not** accept pull requests or code contributions.
 
-1. Keep language friendly and constructive.  
-2. Avoid posting personal data or private server configs.  
-3. Keep screenshots < 2 MB when possible.  
-4. Use Markdown formatting for clarity.  
+### You *can*:
+- Open issues (bug reports, suggestions, feedback)
+- Participate in discussions
+- Apply to join the A Game of Cubes team
+- Read the public wiki
 
-By contributing (through Issues, Discussions, or PRs), you agree that your input is covered by the  
-**Creative Commons Attribution-NonCommercial-ShareAlike 4.0 License (CC BY-NC-SA 4.0)**.
+### You *cannot*:
+- Submit pull requests
+- Push changes
+- Edit the wiki
+- Modify any files in the repo
 
-Full license: [LICENSE](../LICENSE)
+This is a **read-only public portal**, not the development codebase.
+
+If you'd like to contribute to the project in an official role,  
+please submit an application here:
+
+👉 https://github.com/diskawrs/AGameOfCubes/issues/new?template=join-the-team.yml
