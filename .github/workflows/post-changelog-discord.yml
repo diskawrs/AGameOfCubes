@@ -6,7 +6,7 @@ on:
       - main  # or your wiki branch
     paths:
       - '**.md'  # only trigger on markdown changes
-
+  workflow_dispatch:  # <- allows manual trigger
 jobs:
   post_to_discord:
     runs-on: ubuntu-latest
