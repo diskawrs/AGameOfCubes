@@ -45,7 +45,11 @@ jobs:
           echo "$LATEST" > $PREV_FILE
 
       - name: Post to Discord
+        if: success() && env.LATEST_TITLE != ''
         run: |
+          # Escape quotes in title
+          ESCAPED_TITLE=$(echo "$LATEST_TITLE" | sed 's/"/\\"/g')
           curl -H "Content-Type: application/json" \
                -X POST \
-               -d "{\"content\": \"📝 [**$LATEST_TITLE**](https://github.com/diskawrs/AGameOfCubes/wi)**_**]()
+               -d "{\"content\": \"📝 [**$ESCAPED_TITLE**](https://github.com/diskawrs/AGameOfCubes/wiki/Changelog#$SECTION)\"}" \
+               ${{ secrets.DISCORD_CHANGELOG_WEBHOOK_URL }}
