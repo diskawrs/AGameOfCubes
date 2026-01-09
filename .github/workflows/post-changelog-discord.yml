@@ -3,14 +3,13 @@ name: Post Latest Changelog to Discord
 on:
   push:
     branches:
-      - main  # replace with your wiki branch if different
+      - main  # or your wiki branch
     paths:
-      - '**.md'  # trigger on any markdown file changes
+      - '**.md'  # trigger only on markdown changes
 
 jobs:
   post_to_discord:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Wiki Repo
         uses: actions/checkout@v3
@@ -21,11 +20,29 @@ jobs:
       - name: Get Latest Changelog Title
         id: changelog
         run: |
-          # Grab the first line in Changelog.md that starts with a date
+          # Extract first line in Changelog.md that starts with YYYY-MM-DD —
           LATEST=$(grep -E '^[0-9]{4}-[0-9]{2}-[0-9]{2} —' wiki/Changelog.md | head -n1)
           echo "LATEST_TITLE=$LATEST" >> $GITHUB_ENV
 
+          # Save previous title from file (or create if not exist)
+          PREV_FILE=".github/.latest_changelog"
+          mkdir -p $(dirname $PREV_FILE)
+          if [ -f "$PREV_FILE" ]; then
+            PREV=$(cat $PREV_FILE)
+          else
+            PREV=""
+          fi
+
+          echo "$LATEST" > $PREV_FILE
+
+          # Check if latest is different from previous
+          if [ "$LATEST" = "$PREV" ]; then
+            echo "No new changelog entry. Exiting."
+            exit 0
+          fi
+
       - name: Post to Discord
+        if: ${{ steps.changelog.outputs.LATEST_TITLE != '' }}
         run: |
           curl -H "Content-Type: application/json" \
                -X POST \
