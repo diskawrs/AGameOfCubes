@@ -37,7 +37,7 @@ jobs:
           curl -H "Content-Type: application/json" \
                -X POST \
                -d "{\"content\": \"📝 [**$LATEST_TITLE**](https://github.com/diskawrs/AGameOfCubes/wiki/Changelog#)\"}" \
-               ${{ secrets.DISCORD_WEBHOOK_URL }}
+               ${{ secrets.DISCORD_CHANGELOG_WEBHOOK_URL }}
 
     branches: [ "main" ]
   pull_request:
